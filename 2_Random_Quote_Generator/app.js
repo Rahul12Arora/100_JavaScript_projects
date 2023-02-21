@@ -29,3 +29,17 @@ const quotes = [
       author: " Tyne Daly"
     }
   ]
+
+const quoteEle = document.querySelector(".quoteContent");
+const AuthorEle = document.querySelector(".quoteAuthor");
+const buttonEle = document.querySelector(".button");
+
+buttonEle.addEventListener("click",infoChanger);
+
+function infoChanger(){
+  let index = Math.floor(Math.random()*quotes.length);
+  quoteEle.innerHTML = quotes[index].quote;
+  AuthorEle.innerHTML = quotes[index].author;
+  console.log("listening to button");
+  console.log(index);
+}
