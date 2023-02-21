@@ -1,18 +1,18 @@
-const displayer = document.querySelector(".displayhere");
+const displayer = document.querySelector(".displayer");
 const incrementEle = document.querySelector(".increment");
 const decrementEle = document.querySelector(".decrement");
 
-incrementEle.addEventListener("click",increase);
-decrementEle.addEventListener("click",decrease);
-
-let data=0;
+let counter=0;
 
 function increase(){
-  displayer.innerHTML = data+1;
-  console.log("listening to button");
+  displayer.innerHTML = ++counter;
+  console.log("listening to increase button");
 }
 
 function decrease(){
-  displayer.innerHTML = data-1;
-  console.log("listening to button");
+  displayer.innerHTML = --counter;
+  console.log("listening to decrement button");
 }
+
+incrementEle.addEventListener("click",increase);
+decrementEle.addEventListener("click",decrease);
