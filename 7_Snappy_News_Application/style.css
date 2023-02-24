@@ -1,0 +1,158 @@
+body {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	background: linear-gradient(-45deg, #000000, #ffffff, #8eb6c5, #3e566d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    position: absolute;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.mainframe{
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+}
+
+
+.subframe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.imagebox{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    border-radius: 5px;
+    margin: 20px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+*{
+    /* border: 1px solid black;
+    border-radius: 5px; */
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  
+  @keyframes TransitioningBackground {
+    0% {
+      background-position: 1% 0%;
+    }
+    50% {
+      background-position: 99% 100%;
+    }
+    100% {
+      background-position: 1% 0%;
+    }
+  }
+  .subscribe-button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(270deg, #8e9ac2, #42579a);
+    background-size: 400% 400%;
+    animation: TransitioningBackground 10s ease infinite;
+    transition: 0.6s;
+  }
+  .subscribe-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
+    top: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+  .subscribe-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    top: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+  .subscribe-button:hover {
+    background-image: linear-gradient(to left, #2d8fe5, #d155b8);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .subscribe-button:hover::before, .subscribe-button:hover::after {
+    transform: translateX(300px) skewX(-15deg);
+    transition: 0.7s;
+  }
+
+
+
+
+
+
+  .nine h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+
+.category-holder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.news-category{
+  text-transform: capitalize;
+ }
