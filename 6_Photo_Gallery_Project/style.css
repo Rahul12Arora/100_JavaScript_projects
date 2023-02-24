@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(253, 241, 226);
+    position: absolute;
+}
+.mainframe{
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+}
+.child{
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+    margin: 20px;
+}
+.inputfield, .button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+.subframe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.imagebox{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    border-radius: 5px;
+    margin: 20px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+*{
+    border: 1px solid black;
+    border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+.parent{
+    width: 75vw;
+    height: 75vh;
+    position: absolute;
+    top: 12.5vh;
+    left: 12.5vw;
+    display: flex;
+    justify-content: center;
+  	align-items: center;
+}
+
+.children{
+    position: absolute;
+}
+
+.leftarrow{
+left: 0;
+}
+
+.rightarrow{
+right: 0;
+}
+
+.iconbox{
+    width: 30px;
+    height:fit-content;
+    z-index: -1;
+}
+.imagediv{
+    background-image: url("./img/contBcg-0.jpeg");
+    background-color: red;
+}
+
+*{
+    border: 1px solid black;
+}
